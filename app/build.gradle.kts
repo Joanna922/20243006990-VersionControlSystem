@@ -4,14 +4,13 @@ plugins {
 
 android {
     namespace = "com.example.practical3_github"
-    compileSdk {
-        version = release(37)
-    }
+    compileSdk = 34
+
 
     defaultConfig {
         applicationId = "com.example.practical3_github"
         minSdk = 24
-        targetSdk = 37
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -20,11 +19,10 @@ android {
 
     buildTypes {
         release {
-            optimization {
-                enable = false
-            }
+            isMinifyEnabled = false
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
